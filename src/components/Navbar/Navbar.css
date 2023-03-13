@@ -1,0 +1,11 @@
+
+.img-cart{
+    width: 3rem;
+    margin: 1rem;
+}
+
+h2{
+    display: inline;
+    text-shadow: 0 2px 7px black;
+    font-size: 2rem;
+}
