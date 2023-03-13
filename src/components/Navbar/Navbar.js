@@ -10,8 +10,10 @@ const MyNavbar = () => {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="#">
-          <img className="img-cart" src={logo} alt='logo'/>
-          <h2>Sublim-Art</h2>
+          <div className='brand-div'>
+            <img className="img-cart" src={logo} alt='logo'/>
+            <h2>Sublim-Art</h2>
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
