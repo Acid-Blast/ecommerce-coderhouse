@@ -5,15 +5,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
-function App() {
+const Layout = (props) => {
+  return(
+    <div>
+      <h3>{props.title}</h3>
+      {props.children}
+    </div>
+  )
+}
+
+const App = () => {
   return (
     <div className="App">
-      <nav>
-        <MyNavbar />
-      </nav>
-
+      <MyNavbar />
+      
       <header className="App-header">
         <ItemListContainer greeting="Bienvenido a mi Ecommerce" />
+
+        <Layout title="Subtitulo">
+          <p>Texto de ejemplo</p>
+        </Layout>
       </header>
     </div>
   );
