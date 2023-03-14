@@ -1,0 +1,22 @@
+.cartWidget-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    /* flex-direction: column; */
+    margin: 2rem;
+}
+
+.cartWidget-container h3{
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.cart-img{
+    width: 2rem;
+    filter: invert(1);
+}
+.cart-img:hover{
+    cursor: pointer;
+    opacity: .8;
+}
