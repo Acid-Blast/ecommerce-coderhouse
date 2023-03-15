@@ -13,3 +13,11 @@
     text-shadow: 0 2px 7px black;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    .brand-div h2{
+        display: inline;
+        text-shadow: 0 2px 7px black;
+        font-size: 1.5rem;
+    }
+}

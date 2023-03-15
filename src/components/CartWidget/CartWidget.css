@@ -3,12 +3,13 @@
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    /* flex-direction: column; */
     margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .cartWidget-container h3{
-    color: #aaa;
+    color: #ccc;
     font-size: 1rem;
 }
 
@@ -16,7 +17,14 @@
     width: 2rem;
     filter: invert(1);
 }
-.cart-img:hover{
+.cart-img:active{
+    transform: scale(.9);
+}
+.cartWidget-container:hover{
     cursor: pointer;
-    opacity: .8;
+    filter: drop-shadow(0 0 7px #eee8);
+}
+.cart-btn{
+    background-color: transparent;
+    border:none;
 }

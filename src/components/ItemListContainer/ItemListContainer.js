@@ -1,5 +1,5 @@
-import './ItemListContainer.css'
 import img from '../Navbar/assets/logo.png'
+import './ItemListContainer.css'
 
 const ItemListContainer = (props) => {
     return (
