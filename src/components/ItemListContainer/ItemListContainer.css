@@ -1,8 +1,18 @@
+.itemListContainer{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .saludo{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .logo-saludo{
-    width: 30%;
+    justify-self: center;
+    width: 200px;
     margin: 2rem;
 }

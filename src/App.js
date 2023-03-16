@@ -12,7 +12,7 @@ const App = () => {
       <MyNavbar />
       
       <header className="App-header">
-        <ItemListContainer greeting="Bienvenido a mi Ecommerce" />
+        <ItemListContainer greeting="Destacados" />
       </header>
     </div>
   );

@@ -1,0 +1,18 @@
+.item{
+    background: linear-gradient(to bottom, #111 , #fff1);
+    padding: 1rem;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+
+.item img{
+    width: 150px;
+    filter: drop-shadow(0 0 5px black);
+}
+.item img:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #fff8);
+}
