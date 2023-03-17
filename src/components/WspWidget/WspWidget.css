@@ -1,0 +1,14 @@
+.wspWidget{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+}
+.wspWidget a img{
+    width: 3rem;
+    filter: drop-shadow(0 0  5px #fff3);
+}
+.wspWidget a img:hover{
+    filter: drop-shadow(0 0 7px #5c8);
+    transition: all .2s;
+}

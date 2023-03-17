@@ -1,18 +1,46 @@
 .itemListContainer{
-    margin-top: 15rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.saludo{
+.logo-container{
+    margin-bottom: 3rem;
+    width: 100%;
+    
+}
+
+.txt{
+    color: #eee;
     font-size: 4rem;
+    text-shadow: 1px 1px 7px #111;
 }
 
-.logo-saludo{
+.logo{
     justify-self: center;
-    width: 200px;
+    width: 150px;
     margin: 2rem;
+    filter: drop-shadow(0 0 7px black);
+} 
+
+.logo-banner{
+    background-color: #414559;
+    width: 100%;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .txt{
+        font-size: 2rem;
+    }
+
+    .logo{
+        justify-self: center;
+        width: 100px;
+        margin: 2rem;
+    }
+    
 }

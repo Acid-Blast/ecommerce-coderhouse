@@ -1,10 +1,16 @@
+/* Boostrap */
+.container{
+    height: fit-content;
+}
 
+/* ------------- */
 .brand-div{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.brand-div .img-cart{
+.brand-div .img-logo{
     width: 3rem;
     margin: 1rem;
 }
@@ -19,6 +25,11 @@
     .brand-div h2{
         display: inline;
         text-shadow: 0 2px 7px black;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .brand-div .img-logo{
+        width: 2.7rem;
+        margin: .5rem;
     }
 }

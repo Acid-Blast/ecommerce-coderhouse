@@ -18,10 +18,14 @@ const ItemListContainer = (props) => {
     
     return (
         <div className='itemListContainer'>
-            <h2 className="saludo">{props.greeting}</h2>
-            <img className='logo-saludo' src={img} alt='logo'/>
-
-            <ItemList products={products}/>
+            <div className='logo-container'>
+                <div className='logo-banner'>
+                    <img className='logo' src={img} alt='logo'/>
+                    <h2 className="txt">{props.greeting}</h2>
+                </div>
+    
+            </div>
+            <ItemList products={products} txt="Destacados"/>
         </div>
     );
 }

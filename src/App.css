@@ -1,19 +1,23 @@
-/* @import 'components/Navbar/Navbar.css'; */
+:root{
+  --background: #a5a9b2;
+}
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(to bottom right, var(--background), #0001);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #222;
 }
+
 
 

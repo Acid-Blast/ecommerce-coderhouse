@@ -12,7 +12,7 @@ const MyNavbar = () => {
       <Container>
         <Navbar.Brand href="#">
           <div className='brand-div'>
-            <img className="img-cart" src={logo} alt='logo'/>
+            <img className="img-logo" src={logo} alt='logo'/>
             <h2>Sublim-Art</h2>
           </div>
         </Navbar.Brand>
