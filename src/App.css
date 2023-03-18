@@ -1,6 +1,4 @@
-:root{
-  --background: #a5a9b2;
-}
+@import url('./root.css');
 
 .App {
   text-align: center;
@@ -9,7 +7,7 @@
 
 
 .App-header {
-  background: linear-gradient(to bottom right, var(--background), #0001);
+  background: linear-gradient(to bottom, var(--background), var(--caramel));
   min-height: 100vh;
   display: flex;
   flex-direction: column;

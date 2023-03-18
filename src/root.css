@@ -1,0 +1,20 @@
+:root{
+    --background: #F7F3EDff;
+  
+    --light: #F7F3EDff;
+    --black: #060100ff;
+    --eerie-black: #1B1A14ff;
+    --battleship-gray: #8C877Aff;
+    --walnut-brown: #595647ff;
+    --chamoisee: #937657ff;
+    --caramel: #BA8554ff;
+    
+    --alpha-light: #F7F3ED40;
+    --alpha-black: #06010040;
+    --alpha-eerie-black: #1B1A1440;
+    --alpha-battleship-gray: #8C877A40;
+    --alpha-walnut-brown: #59564740;
+    --alpha-chamoisee: #93765740;
+    --alpha-caramel: #BA855440;
+
+  }

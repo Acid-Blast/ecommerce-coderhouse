@@ -1,3 +1,5 @@
+@import url('../../root.css');
+
 .itemListContainer{
     margin-top: 8rem;
     display: flex;
@@ -26,7 +28,7 @@
 } 
 
 .logo-banner{
-    background-color: #414559;
+    background-color: var(--walnut-brown);
     width: 100%;
     margin-top: -1rem;
     padding-bottom: 1rem;

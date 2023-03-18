@@ -25,7 +25,7 @@ const ItemListContainer = (props) => {
                 </div>
     
             </div>
-            <ItemList products={products} txt="Destacados"/>
+            <ItemList products={products} txt="Novedades"/>
         </div>
     );
 }

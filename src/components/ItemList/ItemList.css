@@ -1,7 +1,7 @@
 .itemList{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -15,4 +15,10 @@
     width: 100%;
     font-size: 2.5rem;
     text-shadow: 1px 1px 5px #1118;
+}
+
+@media screen and (max-width: 600px){
+    .itemList{
+        width: 100%;
+    }
 }

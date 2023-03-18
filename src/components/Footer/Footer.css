@@ -1,5 +1,7 @@
+@import url('../../root.css');
+
 footer{
-    background-color: #191a25;
+    background-color: var(--eerie-black);
     height: fit-content;
     padding-top: 3rem;
     color: #999;
@@ -24,7 +26,8 @@ footer section aside h4{
 }
 footer img{
     width: 25px;
-    filter: drop-shadow(0 0 5px #eee5);
+    filter: invert(1);
+    opacity: .6;
 
 }
 
@@ -45,12 +48,18 @@ footer section aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.redes a{
+footer a{
     color: #666;
 }
 
-.contacto{
-    
+footer a:hover{
+    color: #666;
+    opacity: .9;
+}
+
+footer section .contacto p{
+    justify-content: center;
 }

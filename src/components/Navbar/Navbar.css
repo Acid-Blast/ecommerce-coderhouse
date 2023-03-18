@@ -1,4 +1,10 @@
+@import url('../../root.css');
+
 /* Boostrap */
+nav{
+    background-color: var(--eerie-black);
+
+}
 .container{
     height: fit-content;
 }

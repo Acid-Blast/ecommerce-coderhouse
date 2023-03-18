@@ -9,6 +9,6 @@
     filter: drop-shadow(0 0  5px #fff3);
 }
 .wspWidget a img:hover{
-    filter: drop-shadow(0 0 7px #5c8);
-    transition: all .2s;
+    filter: drop-shadow(0 0 7px #060100aa);
+    transition: all .3s;
 }

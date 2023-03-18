@@ -8,7 +8,7 @@ import './Navbar.css';
 
 const MyNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="#">
           <div className='brand-div'>
@@ -20,8 +20,8 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="mx-auto ">
+            <Nav.Link href="#set-jardin">Inicio</Nav.Link>
             <Nav.Link href="#vinilos">Vinilos</Nav.Link>
-            <Nav.Link href="#set-jardin">Sets Jardin</Nav.Link>
             <Nav.Link href="#peluches">Peluches</Nav.Link>
             <Nav.Link href="#cartucheras">Cartucheras</Nav.Link>
             <Nav.Link href="#remeras">Remeras</Nav.Link>
