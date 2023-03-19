@@ -1,4 +1,3 @@
-import img from '../Navbar/assets/logo.png';
 import './ItemListContainer.css';
 import {useEffect, useState} from 'react';
 import { getProducts } from '../../asyncMock';
@@ -18,13 +17,6 @@ const ItemListContainer = (props) => {
     
     return (
         <div className='itemListContainer'>
-            <div className='logo-container'>
-                <div className='logo-banner'>
-                    <img className='logo' src={img} alt='logo'/>
-                    <h2 className="txt">{props.greeting}</h2>
-                </div>
-    
-            </div>
             <ItemList products={products} txt="Novedades"/>
         </div>
     );

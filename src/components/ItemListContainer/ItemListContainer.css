@@ -1,48 +1,9 @@
 @import url('../../root.css');
 
 .itemListContainer{
-    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.logo-container{
-    margin-bottom: 3rem;
-    width: 100%;
-    
-}
-
-.txt{
-    color: #eee;
-    font-size: 4rem;
-    text-shadow: 1px 1px 7px #111;
-}
-
-.logo{
-    justify-self: center;
-    width: 150px;
-    margin: 2rem;
-    filter: drop-shadow(0 0 7px black);
-} 
-
-.logo-banner{
-    background-color: var(--walnut-brown);
-    width: 100%;
-    margin-top: -1rem;
-    padding-bottom: 1rem;
-}
-
-@media screen and (max-width: 600px) {
-    .txt{
-        font-size: 2rem;
-    }
-
-    .logo{
-        justify-self: center;
-        width: 100px;
-        margin: 2rem;
-    }
-    
-}

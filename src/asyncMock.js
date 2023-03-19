@@ -12,12 +12,12 @@ import img9 from './assets/Screenshot_9.png'
 const products = [
     { 
         id: '1', 
-        name: 'Producto', 
+        name: 'Nombre de Producto muy largo', 
         price: 1200, 
         category: 'celular', 
         img: img1, 
         stock: 25, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '2',
@@ -26,7 +26,7 @@ const products = [
         category: 'celular', 
         img: img2, 
         stock: 16, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '3', 
@@ -35,7 +35,7 @@ const products = [
         category: 'tablet', 
         img:img3, 
         stock: 10, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '4',
@@ -44,7 +44,7 @@ const products = [
         category: 'celular', 
         img:img4, 
         stock: 16, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '5', 
@@ -53,7 +53,7 @@ const products = [
         category: 'tablet', 
         img: img5, 
         stock: 10, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '6',
@@ -62,7 +62,7 @@ const products = [
         category: 'celular', 
         img: img6, 
         stock: 16, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '7', 
@@ -71,7 +71,7 @@ const products = [
         category: 'tablet', 
         img: img7, 
         stock: 10, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '8',
@@ -80,7 +80,7 @@ const products = [
         category: 'celular', 
         img: img8, 
         stock: 16, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '9', 
@@ -89,7 +89,7 @@ const products = [
         category: 'tablet', 
         img: img9, 
         stock: 10, 
-        description:'Descripción del producto. Texto de prueba, tecto de prueba'
+        description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     }
 ]
 

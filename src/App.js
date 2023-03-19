@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import WspWidget from './components/WspWidget/WspWidget';
+import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer'
 
 import './App.css';
@@ -14,7 +15,8 @@ const App = () => {
       <WspWidget/>
       
       <header className="App-header">
-        <ItemListContainer greeting="Sublim-Art" />
+        <Banner  titulo="Sublim-Art" subtitulo="¡Todo personalizado!"/>
+        <ItemListContainer titulo="Sublim-Art" subtitulo="¡Todo personalizado!" />
       </header>
 
       <Footer />

@@ -3,7 +3,7 @@
 /* Boostrap */
 nav{
     background-color: var(--eerie-black);
-
+    box-shadow: 0 0 7px var(--black);
 }
 .container{
     height: fit-content;

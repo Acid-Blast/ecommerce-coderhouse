@@ -6,10 +6,11 @@ const Footer = () => {
             <section>
                 <aside className='contacto'>
                     <h4>Contacto</h4>
-                    <p>email@email.com.ar</p>
-                    <p>+54 011-11223344</p>
+                    <p>emailDeContacto@gmail.com.ar</p>
+                    <p>Tel: +54 011-11223344</p>
                     <p>Buenos Aires, Mataderos</p>
                 </aside>
+
                 <aside className='redes'>
                     <h4>Redes</h4>
                     <ul>
