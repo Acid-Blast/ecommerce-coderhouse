@@ -8,6 +8,7 @@ const Footer = () => {
                     <h4>Contacto</h4>
                     <p>email@email.com.ar</p>
                     <p>+54 011-11223344</p>
+                    <p>Buenos Aires, Mataderos</p>
                 </aside>
                 <aside className='redes'>
                     <h4>Redes</h4>
@@ -28,7 +29,7 @@ const Footer = () => {
                 </aside>
             </section>
             <h6> &#169; Copyright 2023</h6>
-            <a href="https://github.com/Acid-Blast" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/Acid-Blast/ecommerce-coderhouse" target="_blank" rel='noreferrer'>
                 Todos los derechos reservados
             </a>
         </footer>
