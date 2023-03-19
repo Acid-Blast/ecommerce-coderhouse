@@ -1,3 +1,4 @@
+/* variables */
 :root{
     --background: #F7F3EDff;
   
@@ -18,3 +19,25 @@
     --alpha-caramel: #BA855440;
 
   }
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--battleship-gray);
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--eerie-black); 
+  outline: 1px solid var(--alpha-caramel);
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #060100;
+}

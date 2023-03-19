@@ -1,3 +1,5 @@
+@import url('../../root.css');
+
 .cartWidget-container{
     display: flex;
     justify-content: center;
@@ -14,14 +16,14 @@
 
 .cart-img{
     width: 2rem;
-    filter: invert(1);
+    filter: invert(1) sepia(1);
 }
 .cart-img:active{
     transform: scale(.9);
 }
 .cartWidget-container:hover{
     cursor: pointer;
-    filter: drop-shadow(0 0 7px #eee8);
+    filter: drop-shadow(0 0 7px var(--caramel));
 }
 .cart-btn{
     background-color: transparent;

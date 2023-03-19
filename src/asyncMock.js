@@ -8,87 +8,88 @@ import img7 from './assets/Screenshot_7.png'
 import img8 from './assets/Screenshot_8.png'
 import img9 from './assets/Screenshot_9.png'
 
+
 const products = [
     { 
         id: '1', 
-        name: 'Producto 1', 
+        name: 'Producto', 
         price: 1200, 
         category: 'celular', 
         img: img1, 
         stock: 25, 
-        description:'Descripcion de Iphone 12'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '2',
-        name: 'samsung s21', 
+        name: 'Producto', 
         price: 800, 
         category: 'celular', 
         img: img2, 
         stock: 16, 
-        description:'Descripcion de Samsung s21'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '3', 
-        name: 'Ipad 8va generacion', 
+        name: 'Producto', 
         price: 1200, 
         category: 'tablet', 
         img:img3, 
         stock: 10, 
-        description:'Descripcion de Ipad'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '4',
-        name: 'samsung s21', 
+        name: 'Producto', 
         price: 800, 
         category: 'celular', 
         img:img4, 
         stock: 16, 
-        description:'Descripcion de Samsung s21'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '5', 
-        name: 'Ipad 8va generacion', 
+        name: 'Producto', 
         price: 1200, 
         category: 'tablet', 
         img: img5, 
         stock: 10, 
-        description:'Descripcion de Ipad'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '6',
-        name: 'samsung s21', 
+        name: 'Producto', 
         price: 800, 
         category: 'celular', 
         img: img6, 
         stock: 16, 
-        description:'Descripcion de Samsung s21'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '7', 
-        name: 'Ipad 8va generacion', 
+        name: 'Producto', 
         price: 1200, 
         category: 'tablet', 
         img: img7, 
         stock: 10, 
-        description:'Descripcion de Ipad'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '8',
-        name: 'samsung s21', 
+        name: 'Producto', 
         price: 800, 
         category: 'celular', 
         img: img8, 
         stock: 16, 
-        description:'Descripcion de Samsung s21'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     },
     { 
         id: '9', 
-        name: 'Ipad 8va generacion', 
+        name: 'Producto', 
         price: 1200, 
         category: 'tablet', 
         img: img9, 
         stock: 10, 
-        description:'Descripcion de Ipad'
+        description:'Descripción del producto. Texto de prueba, tecto de prueba'
     }
 ]
 

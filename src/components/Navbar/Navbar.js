@@ -20,12 +20,12 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="mx-auto ">
-            <Nav.Link href="#set-jardin">Inicio</Nav.Link>
-            <Nav.Link href="#vinilos">Vinilos</Nav.Link>
-            <Nav.Link href="#peluches">Peluches</Nav.Link>
-            <Nav.Link href="#cartucheras">Cartucheras</Nav.Link>
-            <Nav.Link href="#remeras">Remeras</Nav.Link>
-            <Nav.Link href="#about">Sobre nosotros</Nav.Link>
+            <Nav.Link className='nav-link' href="#set-jardin">Inicio</Nav.Link>
+            <Nav.Link className='nav-link' href="#vinilos">Vinilos</Nav.Link>
+            <Nav.Link className='nav-link' href="#peluches">Peluches</Nav.Link>
+            <Nav.Link className='nav-link' href="#cartucheras">Cartucheras</Nav.Link>
+            <Nav.Link className='nav-link' href="#remeras">Remeras</Nav.Link>
+            <Nav.Link className='nav-link' href="#about">Sobre nosotros</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

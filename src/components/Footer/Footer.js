@@ -30,7 +30,7 @@ const Footer = () => {
             </section>
             <h6> &#169; Copyright 2023</h6>
             <a href="https://github.com/Acid-Blast/ecommerce-coderhouse" target="_blank" rel='noreferrer'>
-                Todos los derechos reservados
+                by Marce Falasca
             </a>
         </footer>
     )

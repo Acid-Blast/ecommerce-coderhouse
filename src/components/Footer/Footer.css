@@ -4,6 +4,7 @@ footer{
     background-color: var(--eerie-black);
     height: fit-content;
     padding-top: 3rem;
+    padding-bottom: 1rem;
     color: #999;
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@ footer section aside h4{
     text-align: right;
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px #eee3;
 }
 footer img{
     width: 25px;
@@ -59,6 +61,6 @@ footer a{
 }
 
 footer a:hover{
-    color: #666;
+    color: var(--caramel);
     opacity: .9;
 }

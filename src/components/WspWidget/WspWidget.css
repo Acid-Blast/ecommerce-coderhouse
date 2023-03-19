@@ -1,14 +1,23 @@
+@import url('../../root.css');
+
 .wspWidget{
+    z-index: 1;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
 
 }
 .wspWidget a img{
-    width: 3rem;
+    width: 2.5rem;
     filter: drop-shadow(0 0  5px #fff3);
 }
 .wspWidget a img:hover{
-    filter: drop-shadow(0 0 7px #060100aa);
+    filter: drop-shadow(0 0 7px var(--chamoisee));
     transition: all .3s;
+}
+
+@media screen and (max-width: 600px) {
+    .wspWidget a img{
+        width: 42px;
+    }
 }
