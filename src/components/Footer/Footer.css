@@ -19,6 +19,10 @@ footer section aside ul {
     align-items: flex-start;
     gap: 7px;
 }
+footer section aside ul li a{
+    display: flex;
+    gap: 7px;
+}
 
 footer section aside h4{
     text-align: right;
@@ -33,10 +37,7 @@ footer img{
 
 }
 
-footer section aside ul li a{
-    display: flex;
-    gap: 7px;
-}
+
 
 footer section{
     display: flex;
@@ -44,17 +45,13 @@ footer section{
     width: 100%;
 }
 
-footer section .contacto{
+footer section aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-footer section .redes{
-    justify-content: center;
-
-}
 
 footer a{
     color: #666;
@@ -64,3 +61,42 @@ footer a:hover{
     color: var(--caramel);
     opacity: .9;
 }
+
+.redes{
+    align-items: flex-end;
+}
+.contacto{
+    align-items: flex-start;
+
+}
+
+@media screen and (max-width: 600px) {
+    footer section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        font-size: 1.1rem;
+    }
+    
+    footer section aside{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .redes, .contacto{
+        align-items: center;
+        margin: 2rem;
+    }
+    .redes h4{display: none}
+
+    footer section aside ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+

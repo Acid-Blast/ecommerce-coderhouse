@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    min-height: 500px;
+    height: 530px;
     background-color: #fff3;
     box-shadow: 0 4px 30px #1115;
     padding: 12px;
@@ -28,6 +28,12 @@
     background-color: #fff5 ;
     box-shadow:  0 4px 20px #111a;
     transform: scale(1.02);
+}
+
+.btn-container{
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 600px){

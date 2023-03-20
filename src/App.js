@@ -16,7 +16,7 @@ const App = () => {
       
       <header className="App-header">
         <Banner  titulo="Sublim-Art" subtitulo="¡Todo personalizado!"/>
-        <ItemListContainer titulo="Sublim-Art" subtitulo="¡Todo personalizado!" />
+        <ItemListContainer />
       </header>
 
       <Footer />

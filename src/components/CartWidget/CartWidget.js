@@ -1,13 +1,22 @@
+import {useState} from 'react'
 import cart from './assets/cart.png'
 import './CartWidget.css'
 
-let num = 0;
-
 const CartWidget = () => {
+
+    const [cant, setCant] = useState(0);
+
+    const handleClick = () => {
+        setCant(prev => prev + 1)
+    }
+
     return(
-        <div className='cartWidget-container' title={num + " productos"}>
-            <button className='cart-btn'><img src={cart} alt="Carrito" className='cart-img'/></button>
-            <h3> {num} </h3>
+        <div className='cartWidget-container' title={cant + " productos"}>
+            <button className='cart-btn' onClick={handleClick}>
+                <img src={cart} alt="Carrito" className='cart-img'/>
+            </button>
+
+            <h3> {cant} </h3>
         </div>
     );
 }
