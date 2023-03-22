@@ -79,7 +79,7 @@ const products = [
         price: 800, 
         category: 'celular', 
         img: img8, 
-        stock: 16, 
+        stock: 0, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
@@ -88,7 +88,7 @@ const products = [
         price: 1200, 
         category: 'tablet', 
         img: img9, 
-        stock: 10, 
+        stock: 0, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     }
 ]

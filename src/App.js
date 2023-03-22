@@ -21,7 +21,7 @@ const App = () => {
       </header>
 
       <main>
-        <Banner titulo="Destacados" subtitulo="¡No te lo pierdas!"/>
+        <Banner titulo="Preventa" subtitulo="¡No te lo pierdas!"/>
         <ItemDetailContainer />
       </main>
 
