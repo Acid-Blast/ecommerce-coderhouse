@@ -16,7 +16,6 @@ const ItemDetail = ({name, price, category, img, stock, description}) => {
                     <h3 className='price'>Precio: ${price}</h3>
                 </div>
             </div>
-
         </div>
     )
 }

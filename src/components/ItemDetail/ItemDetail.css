@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+    gap: 5rem;
 }
 
 .img-container{
@@ -12,7 +14,7 @@
     align-items: center;
 }
 .img-container img{
-    width: 70%;
+    width: 500px;
 }
 
 .info-container{
@@ -31,7 +33,6 @@
 
 .info-container h3{
     font-size: 1.2rem;
-    justify-self: flex-end;
 }
 .info-container p{
     text-align: left;

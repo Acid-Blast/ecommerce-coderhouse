@@ -18,7 +18,8 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='itemDetailContainer'>
-            <ItemDetail {...products[2]}/>
+            <ItemDetail {...products[5]}/>
+            <ItemDetail {...products[6]}/>
         </div>
     )
 }
