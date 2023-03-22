@@ -1,0 +1,11 @@
+.itemDetailContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem;
+    /* box-shadow: inset 0 0 10px #111a; */
+    background-color: #fff6;
+    backdrop-filter: blur(12px);
+}

@@ -30,12 +30,6 @@
     transform: scale(1.02);
 }
 
-.btn-container{
-    display: flex;
-    justify-items: center;
-    gap: 1rem;
-}
-
 @media screen and (max-width: 600px){
     .item{
         width: 100%;

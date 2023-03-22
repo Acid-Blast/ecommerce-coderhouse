@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import WspWidget from './components/WspWidget/WspWidget';
 import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 import './App.css';
 
@@ -18,6 +19,11 @@ const App = () => {
         <Banner  titulo="Sublim-Art" subtitulo="¡Todo personalizado!"/>
         <ItemListContainer />
       </header>
+
+      <main>
+        <Banner titulo="Destacado" subtitulo="¡No te lo pierdas!"/>
+        <ItemDetailContainer />
+      </main>
 
       <Footer />
     </div>

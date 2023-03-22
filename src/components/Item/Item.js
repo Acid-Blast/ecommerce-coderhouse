@@ -1,5 +1,5 @@
-import './Item.css';
 import Button from '../Button/Button'
+import './Item.css';
 
 const Item = ({name, img, description}) => {
     return (
@@ -9,7 +9,7 @@ const Item = ({name, img, description}) => {
             {/* <p>Precio: ${price}</p> */}
             <p>{description}</p>
             
-            <div className="btn-container">
+            <div>
                 <Button txt="Agregar al carro"/>
             </div>
         </div>
