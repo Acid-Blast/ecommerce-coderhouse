@@ -11,6 +11,7 @@ footer{
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+
 }
 footer section aside ul {
     list-style-type: none;

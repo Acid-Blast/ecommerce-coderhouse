@@ -11,9 +11,9 @@ const ItemDetail = ({name, price, category, img, stock, description}) => {
                 <p>{description}</p>
                 
                 <div className='info-detail'>
-                    <h3>Categoria: "{category}"</h3>
                     <h3>Stock: {stock}</h3>
                     <h3 className='price'>Precio: ${price}</h3>
+                    <h3>Categoria: {category}</h3>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@ const products = [
         id: '1', 
         name: 'Kit Vinilos', 
         price: 1200, 
-        category: 'kit', 
+        category: 'sets', 
         img: img1, 
         stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
@@ -23,16 +23,16 @@ const products = [
         id: '2',
         name: 'Separadores', 
         price: 800, 
-        category: 'kit', 
+        category: 'sets', 
         img: img2, 
         stock: 15, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '3', 
-        name: 'Set jardtin', 
+        name: 'Set jardin', 
         price: 1200, 
-        category: 'kit', 
+        category: 'sets', 
         img:img3, 
         stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
@@ -97,7 +97,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products);
-        }, 1000);
+        }, 500);
     });
 }
 
@@ -106,6 +106,14 @@ export const getProductsById = (productId) => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products.find(prod => prod.id === productId));
-        }, 1000);
+        }, 500);
+    });
+}
+
+export const getProductsByCategory = (productCat) => {
+    return new Promise((resolve) => {
+        setTimeout( () => {
+            resolve(products.filter(prod => prod.category === productCat));
+        }, 500);
     });
 }
