@@ -80,5 +80,10 @@
     box-shadow: 0 0 2px black, inset 0 0 5px black;
 }
 .contador .btn-addToCart:active{
-    color: #fff;
+    opacity: .9;
+}
+.contador img{
+    width: 2rem;
+    margin-left: .5rem;
+    filter: invert(1);
 }

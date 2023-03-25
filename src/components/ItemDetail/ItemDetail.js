@@ -1,4 +1,5 @@
 import Contador from '../Contador/Contador';
+import logo from '../CartWidget/assets/cart.png'
 
 import './ItemDetail.css'
 
@@ -19,7 +20,7 @@ const ItemDetail = ({name, price, category, img, stock, description}) => {
                 </div>
                 <div className="contador">
                     <Contador max={stock} />
-                    <button className='btn-addToCart'>Agregar</button>
+                    <button className='btn-addToCart'>Agregar <img src={logo} /></button>
                 </div>
             </div>
         </div>
