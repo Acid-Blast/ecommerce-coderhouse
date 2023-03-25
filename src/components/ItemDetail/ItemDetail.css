@@ -58,3 +58,27 @@
     color: red;
     border: 1px solid red;
 }
+
+.contador{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contador .btn-addToCart{
+    padding: .6rem;
+    border: none;
+    color: #eee;
+    text-shadow: 0 0 12px black;
+    background-color: #fff5;
+    box-shadow: inset 0 0 7px black;
+    border-radius: 15px;
+}
+.contador .btn-addToCart:hover{
+    box-shadow: 0 0 2px black, inset 0 0 5px black;
+}
+.contador .btn-addToCart:active{
+    color: #fff;
+}

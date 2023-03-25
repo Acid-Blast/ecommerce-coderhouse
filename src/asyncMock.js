@@ -101,7 +101,6 @@ export const getProducts = () => {
     });
 }
 
-//funcion que reciba un id y solo envie el obj con ese id
 export const getProductsById = (productId) => {
     return new Promise((resolve) => {
         setTimeout( () => {

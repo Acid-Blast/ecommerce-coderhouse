@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import './Item.css';
 
@@ -8,7 +8,6 @@ const Item = ({name, img, description, id}) => {
         <div className="item" tabIndex={0}> 
             <h2>{name}</h2>
             <img src={img} alt={name}/>
-            {/* <p>Precio: ${price}</p> */}
             <p>{description}</p>
             
             <div className='btn-container'>

@@ -25,10 +25,10 @@ const ItemListContainer = () => {
     
     return (
         <div className='itemListContainer'>
+
             <ItemList products={products} txt={categoryId ? categoryId.toUpperCase() : "Novedades"}/>
         </div>
     );
 }
-
 
 export default ItemListContainer;
