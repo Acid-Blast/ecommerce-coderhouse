@@ -12,83 +12,83 @@ import img9 from './assets/Screenshot_9.png'
 const products = [
     { 
         id: '1', 
-        name: 'Nombre de Producto muy largo', 
+        name: 'Kit Vinilos', 
         price: 1200, 
-        category: 'celular', 
+        category: 'kit', 
         img: img1, 
-        stock: 25, 
+        stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '2',
-        name: 'Producto', 
+        name: 'Separadores', 
         price: 800, 
-        category: 'celular', 
+        category: 'kit', 
         img: img2, 
-        stock: 16, 
+        stock: 15, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '3', 
-        name: 'Producto', 
+        name: 'Set jardtin', 
         price: 1200, 
-        category: 'tablet', 
+        category: 'kit', 
         img:img3, 
         stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '4',
-        name: 'Producto', 
+        name: 'Portallaves', 
         price: 800, 
-        category: 'celular', 
+        category: 'maderas', 
         img:img4, 
         stock: 16, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '5', 
-        name: 'Producto', 
+        name: 'Barbijos', 
         price: 1200, 
-        category: 'tablet', 
+        category: 'telas', 
         img: img5, 
         stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '6',
-        name: 'Producto', 
+        name: 'Vinilo horarios', 
         price: 800, 
-        category: 'celular', 
+        category: 'vinilos', 
         img: img6, 
         stock: 16, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '7', 
-        name: 'Producto', 
+        name: 'Cartucheras', 
         price: 1200, 
-        category: 'tablet', 
+        category: 'telas', 
         img: img7, 
         stock: 10, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '8',
-        name: 'Producto', 
+        name: 'Servilletero', 
         price: 800, 
-        category: 'celular', 
+        category: 'maderas', 
         img: img8, 
-        stock: 0, 
+        stock: 13, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     },
     { 
         id: '9', 
-        name: 'Producto', 
+        name: 'Llaveros', 
         price: 1200, 
-        category: 'tablet', 
+        category: 'vinilos', 
         img: img9, 
-        stock: 0, 
+        stock: 1, 
         description:'Descripción del producto. Texto de prueba, texto de prueba. Fin de descripcion.'
     }
 ]
@@ -97,6 +97,15 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products);
+        }, 1000);
+    });
+}
+
+//funcion que reciba un id y solo envie el obj con ese id
+export const getProductsById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout( () => {
+            resolve(products.find(prod => prod.id === productId));
         }, 1000);
     });
 }

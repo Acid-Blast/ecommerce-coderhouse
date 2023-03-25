@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from './assets/logo.png';
 import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const MyNavbar = () => {
 
@@ -13,7 +14,9 @@ const MyNavbar = () => {
       <Container>
         <Navbar.Brand href="#">
           <div className='brand-div'>
-            <img className="img-logo" src={logo} alt='logo'/>
+            <NavLink to="/">
+              <img className="img-logo" src={logo} alt='logo'/>
+            </NavLink>
             <h2>Sublim-Art</h2>
           </div>
         </Navbar.Brand>
@@ -21,11 +24,21 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="mx-auto ">
-            <Nav.Link  className='nav-link' href="#vinilos">Vinilos</Nav.Link>
-            <Nav.Link  className='nav-link' href="#peluches">Peluches</Nav.Link>
-            <Nav.Link  className='nav-link' href="#cartucheras">Cartucheras</Nav.Link>
-            <Nav.Link  className='nav-link' href="#remeras">Remeras</Nav.Link>
-            <Nav.Link  className='nav-link' href="#about">Sobre nosotros</Nav.Link>
+            <Nav.Link  >
+              <NavLink to="/vinilos" className='nav-link'>Vinilos</NavLink>
+            </Nav.Link>
+            <Nav.Link  >
+              <NavLink to="/maderas" className='nav-link'>Maderas</NavLink>
+            </Nav.Link>
+            <Nav.Link  >
+              <NavLink to="/telas" className='nav-link'>De Tela</NavLink>
+            </Nav.Link>
+            <Nav.Link  >
+              <NavLink to="/sets" className='nav-link'>Sets</NavLink>
+            </Nav.Link>
+            <Nav.Link  >
+              <NavLink to="/about" className='nav-link'>Sobre nosotros</NavLink>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

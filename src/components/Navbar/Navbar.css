@@ -11,7 +11,7 @@ nav{
 .nav-link:hover{
     color: var(--chamoisee);
 }
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link .active{
     color: var(--caramel);
 }
 

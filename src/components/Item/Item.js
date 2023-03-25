@@ -1,7 +1,9 @@
-import Button from '../Button/Button'
+import { Link } from 'react-router-dom';
+
 import './Item.css';
 
-const Item = ({name, img, description}) => {
+
+const Item = ({name, img, description, id}) => {
     return (
         <div className="item" tabIndex={0}> 
             <h2>{name}</h2>
@@ -9,8 +11,8 @@ const Item = ({name, img, description}) => {
             {/* <p>Precio: ${price}</p> */}
             <p>{description}</p>
             
-            <div>
-                <Button txt="Agregar al carro"/>
+            <div className='btn-container'>
+                <Link to={`/item/${id}`} className='btn'>Ver detalle </Link>
             </div>
         </div>
     )
