@@ -11,9 +11,12 @@ nav{
 .nav-link:hover{
     color: var(--chamoisee);
 }
-.navbar-nav .nav-link .active{
+.nav-link .active{
     color: var(--caramel);
+    text-decoration: none;
+    vertical-align: middle;
 }
+
 
 /* ------------- */
 .brand-div{
