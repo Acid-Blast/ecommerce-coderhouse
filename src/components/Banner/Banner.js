@@ -1,7 +1,6 @@
 import './Banner.css';
 import img from '../Navbar/assets/logo.png';
 
-
 const Banner = (props) => {
     return (
         <div className='logo-container'>
