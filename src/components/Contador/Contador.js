@@ -8,7 +8,7 @@ const Contador = (props) => {
 
     const sumar = () => count < props.max && setCount(prev => prev + 1);
     
-    const restar = () => count > 0 && setCount(prev => prev - 1);
+    const restar = () => count > 1 && setCount(prev => prev - 1);
 
     return(
         <div className='count-container'>
