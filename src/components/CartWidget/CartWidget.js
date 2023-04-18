@@ -1,18 +1,20 @@
-import {useState} from 'react'
-import cart from './assets/cart.png'
+import cartImg from './assets/cart.png'
+import { useCart } from '../../context/CartContext'
+import { Link } from 'react-router-dom';
+
 import './CartWidget.css'
 
 const CartWidget = () => {
-    const [cant, setCant] = useState(0);
+    const { totalQuantity } = useCart()
 
     return(
-        <div className='cartWidget-container' title={cant + " productos"}>
+        <Link to='/cart' className='cartWidget-container' title={totalQuantity + " productos"}>
             <button className='cart-btn'>
-                <img src={cart} alt="Carrito" className='cart-img'/>
+                <img src={cartImg} alt="Carrito" className='cart-img'/>
             </button>
 
-            <h3> {cant} </h3>
-        </div>
+            <h3> {totalQuantity} </h3>
+        </Link>
     );
 }
 
