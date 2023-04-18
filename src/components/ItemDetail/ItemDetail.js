@@ -1,10 +1,20 @@
 import Contador from '../Contador/Contador';
-import logo from '../CartWidget/assets/cart.png'
+import { useCart } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 
 import './ItemDetail.css'
 
-const ItemDetail = ({name, price, category, img, stock, description}) => {
-    return(
+const ItemDetail = ({id, name, price, category, img, stock, description}) => {
+    const { addItem, isInCart } = useCart()
+
+    const handleOnAdd = (quantity) => {
+        const productToAdd = {
+            id, name, price, quantity
+        }
+        addItem(productToAdd)
+    }
+
+    return( 
         <div className='itemDetail'>
             <div className='img-container'>
                 <img src={img} alt={name}/>
@@ -18,10 +28,16 @@ const ItemDetail = ({name, price, category, img, stock, description}) => {
                     <h3 className='price'>Precio: ${price}</h3>
                     <h3>Categoria: {category}</h3>
                 </div>
-                <div className="contador">
-                    <Contador max={stock} />
-                    <button className='btn-addToCart'>Agregar <img src={logo} /></button>
-                </div>
+                
+                {
+                    isInCart(id) ? (
+                        <div>
+                            <Link className='terminar' to='/cart'>Terminar compra</Link>
+                            <Link className='terminar' to='/'>Seguir comprando</Link>
+                        </div> ) : (
+                        <Contador onAdd={handleOnAdd} max={stock} />
+                    )
+                }
             </div>
         </div>
     )

@@ -10,8 +10,9 @@ nav{
 }
 .nav-link:hover{
     color: var(--chamoisee);
+
 }
-.nav-link .active{
+.active{
     color: var(--caramel);
     text-decoration: none;
     vertical-align: middle;
