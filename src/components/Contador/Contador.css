@@ -1,23 +1,26 @@
 .count-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     padding: 7px;
     border-radius: 15px;
-    background-color: #fff5;
-    box-shadow: inset 0 0 7px black;
-    width: 120px;
-    height: 50px;
+    width: 150px;
 }
 
 .count-container h3{
     margin: 1rem;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px var(--walnut-brown);
 }
 
-.count-container button{
+.count-container .contador{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+}
+
+.count-container .contador button{
     font-weight: bolder;
     text-align: center;
     display: inline-block;
@@ -32,10 +35,32 @@
     height: 25px;
     margin: 0 auto;
     padding: 0;
-    display: inline-block;
     text-align: center;
 }
 .count-container button:hover{
     box-shadow: 0 0 2px black, inset 0 0 5px black;
 
+}
+
+.count-container .btn-addToCart{
+    width: fit-content;
+    border: 1px solid red;
+    padding: .6rem;
+    border: none;
+    color: #eee;
+    text-shadow: 0 0 12px black;
+    background-color: #fff5;
+    box-shadow: inset 0 0 7px black;
+    border-radius: 15px;
+}
+.count-container .btn-addToCart:hover{
+    box-shadow: 0 0 2px black, inset 0 0 5px black;
+}
+.count-container .btn-addToCart:active{
+    opacity: .9;
+}
+.count-container img{
+    width: 2rem;
+    margin-left: .5rem;
+    filter: invert(1);
 }

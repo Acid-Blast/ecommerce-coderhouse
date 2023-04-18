@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
                 setProducts(product);
             })
             .catch(error => console.log(error))
-    }, [])
+    }, [itemId])
 
     return (
         <div className='itemDetailContainer'>
