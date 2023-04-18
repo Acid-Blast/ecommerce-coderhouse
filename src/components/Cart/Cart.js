@@ -16,7 +16,6 @@ const Cart = () => {
                             <h2>{prod.name} x {prod.quantity}</h2>
                             <h2>${prod.price} c/u</h2>
                             <h2>${prod.price * prod.quantity}</h2>
-
                         </div>
                     )
                 })
