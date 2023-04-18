@@ -1,8 +1,6 @@
 import './Footer.css';
 
-const version = "v0.2.1";
-
-const Footer = () => {
+const Footer = (props) => {
     return(
         <footer>
             <section>
@@ -31,11 +29,10 @@ const Footer = () => {
                     </ul>
                 </aside>
             </section>
-            <h6>&#169; Copyright 2023</h6>
+            <h6>&#169; Copyright 2023 | {props.version}</h6>
             <a href="https://github.com/Acid-Blast/ecommerce-coderhouse" target="_blank" rel='noreferrer'>
                 by Marce Falasca
             </a>
-            <h6>{version}</h6>
         </footer>
     )
 }

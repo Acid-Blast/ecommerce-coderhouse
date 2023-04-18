@@ -34,7 +34,7 @@ const App = () => {
 
         </CartProvider>
          
-        <Footer />
+        <Footer version={'v0.1.2'}/>
      </BrowserRouter>
     </div>
   );
