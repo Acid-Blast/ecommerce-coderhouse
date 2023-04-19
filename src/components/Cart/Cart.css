@@ -37,10 +37,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: .3rem;
+    padding: .5rem;
+    background-color: var(--alpha-walnut-brown);
+    border-radius: 25px;
 }
 .cart-container .details-container:nth-child(even){
-    background-color: #fff2;
+    background-color: var(--alpha-chamoisee);
 }
 .cart-container .details-container img{
     width: 2.5rem;
@@ -94,6 +96,7 @@
     .btn-order{
         font-size: 1rem;
     }
+
     .details-container img{
         display: none;
     }

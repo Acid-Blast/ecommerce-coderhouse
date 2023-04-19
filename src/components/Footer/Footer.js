@@ -6,7 +6,7 @@ const Footer = (props) => {
             <section>
                 <aside className='contacto'>
                     <h4>Contacto</h4>
-                    <p>sublimart@gmail.com.ar</p>
+                    <p>Mail: sublimart@gmail.com.ar</p>
                     <p>Tel: +54 9 11 1122-3344</p>
                     <p>Buenos Aires, Lomas del Mirador</p>
                 </aside>

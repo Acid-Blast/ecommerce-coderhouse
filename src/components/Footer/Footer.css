@@ -45,6 +45,7 @@ footer img{
 footer section{
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     width: 100%;
 }
 
