@@ -6,30 +6,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 530px;
+    width: 300px;
+    height: 400px;
     padding: 12px;
-    gap: 7px;
+    gap: 1rem;
     text-shadow: 1px 1px 5px #1117;
     transition: all .3s;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     background: linear-gradient(to bottom, var(--alpha-caramel), var(--walnut-brown));
     box-shadow: inset 0 0 7px var(--walnut-brown);
     filter: drop-shadow(0 0 7px var(--eerie-black));
-    
+}
+
+.item h2{
+    font-size: 1.7rem;
 }
 
 .item p{
     font-size: 1rem;
 }
 .item img{
-    width: 300px;
-    box-shadow: 0 0 7px #000a;
-    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 0 5px #0008;
+    border-radius: 10px;
 }
 .item:hover{
     transform: scale(1.02);
-    box-shadow: 0 0 12px var(--eerie-black);
+    box-shadow: 0 0 8px var(--eerie-black);
 
 }
 .btn-container .btn{

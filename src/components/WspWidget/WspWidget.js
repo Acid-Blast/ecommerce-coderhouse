@@ -4,7 +4,7 @@ const WspWidget = () => {
     return(
         <div className='wspWidget'>
             <a target="_blank" rel='noreferrer'
-            href='https://wa.me/+541111111111?
+            href='https://wa.me/+541132916824?
                 text=Hola, Tengo un pedido para Sublim-art!'>
                 <img src="https://www.freeiconspng.com/uploads/whatsapp-black-logo-icon--24.png"  alt='whatsapp logo'/>
             </a>

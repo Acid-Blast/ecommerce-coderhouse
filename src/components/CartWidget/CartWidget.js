@@ -8,11 +8,10 @@ const CartWidget = () => {
     const { totalQuantity } = useCart()
 
     return(
-        <Link to='/cart' className='cartWidget-container' title={totalQuantity + " productos"}>
+        <Link to='/cart' className='cartWidget-container' title={`carrito (${totalQuantity})`}>
             <button className='cart-btn'>
                 <img src={cartImg} alt="Carrito" className='cart-img'/>
             </button>
-
             <div className='number'>
                 <h3> {totalQuantity} </h3>
             </div>

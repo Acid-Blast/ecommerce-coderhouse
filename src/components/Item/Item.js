@@ -8,8 +8,7 @@ const Item = ({name, img, description, id}) => {
         <div className="item" tabIndex={0}> 
             <h2>{name}</h2>
             <img src={img} alt={name}/>
-            <p>{description}</p>
-            
+            {/* <p>{description}</p> */}
             <div className='btn-container'>
                 <Link to={`/item/${id}`} className='btn'>Ver detalle </Link>
             </div>

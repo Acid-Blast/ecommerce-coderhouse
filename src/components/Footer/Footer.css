@@ -65,13 +65,11 @@ footer a:hover{
     opacity: .9;
 }
 
-.redes{
+.redes ul{
+    display: flex;
     align-items: flex-end;
 }
-.contacto{
-    align-items: flex-start;
 
-}
 
 @media screen and (max-width: 600px) {
     footer section{
@@ -90,7 +88,7 @@ footer a:hover{
 
     .redes, .contacto{
         align-items: center;
-        margin: 2rem;
+        padding: 1rem;
     }
     .redes h4{display: none}
 

@@ -2,8 +2,9 @@
 
 
 .logo-container{
-    margin-top: 8rem;
-    margin-bottom: 3rem;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -34,6 +35,10 @@
 
 
 @media screen and (max-width: 600px) {
+    .logo-container{
+        margin-top: 90px;
+    }
+
     .txt{
         font-size: 2rem;
     }
