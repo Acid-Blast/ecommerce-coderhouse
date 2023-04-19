@@ -65,10 +65,11 @@ footer a:hover{
     opacity: .9;
 }
 
-.redes ul{
+.redes{
     display: flex;
     align-items: flex-end;
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -96,7 +97,8 @@ footer a:hover{
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
     }
 }
