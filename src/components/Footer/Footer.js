@@ -16,13 +16,13 @@ const Footer = (props) => {
                     <ul>
                         <li>
                             <a href='https://www.instagram.com/sublim.art_/' target="_blank" rel="noreferrer">
-                                <img src='https://i.pinimg.com/originals/25/b8/17/25b817e94a86009fa7f32810911c0fa6.png' alt='link a instagram'/>
+                                <img src='https://firebasestorage.googleapis.com/v0/b/sublim-art.appspot.com/o/ig.png?alt=media&token=909daaba-fccf-4f07-8ebb-a646ec090c58' alt='link a instagram'/>
                                 Instagram
                             </a>
                         </li>
                         <li>
                             <a href='https://www.facebook.com/sublimart2015' target="_blank" rel="noreferrer">
-                                <img src='https://www.iconpacks.net/icons/2/free-icon-facebook-5213.png' alt='link a facebook'/>
+                                <img src='https://firebasestorage.googleapis.com/v0/b/sublim-art.appspot.com/o/fb.png?alt=media&token=6c8dd65c-d200-4cb8-ad94-d5fbfef41e41' alt='link a facebook'/>
                                 Facebook
                             </a>
                         </li>
