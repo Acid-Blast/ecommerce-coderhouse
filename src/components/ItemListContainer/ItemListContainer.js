@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getProducts, getProductsByCategory } from '../../asyncMock';
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom';
+import { Loader } from '../Loader/Loader'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
@@ -22,13 +23,13 @@ const ItemListContainer = () => {
 
     }, [categoryId])
 
-    if(loading) return <h1>Cargando...</h1>
+    if(loading) return <Loader />
     
     return (
         <div className='itemListContainer'>
             <ItemList 
                 products={products} 
-                txt={categoryId ? categoryId.toUpperCase() : "Todos nuestros productos"}
+                txt={categoryId ? categoryId.toUpperCase() : "Novedades"}
             />
         </div>
     );

@@ -1,18 +1,17 @@
 import { createContext, useState, useContext } from 'react';
 
-const CartContext = createContext('asdasdsad')
+const CartContext = createContext('')
+
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log('carContext Montado', cart)
+    
 
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
-            console.log(productToAdd, cart)
-        } else {
-            console.log('No se agrega porque ya esta en el carrito')
         }
+        
     }
 
     const isInCart = (id) => {

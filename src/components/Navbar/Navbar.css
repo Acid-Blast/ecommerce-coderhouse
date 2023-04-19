@@ -25,14 +25,11 @@ nav{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #eee;
+    color: #eee !important;
     text-shadow: 0 2px 7px black;
     font-size: 2rem;
-
 }
-.brand-div:hover{
-    color: #eee;
-}
+.brand-div:hover{color: #eee !important}
 
 .brand-div .img-logo{
     width: 3rem;
