@@ -12,7 +12,7 @@ const ItemListContainer = () => {
 
     useEffect( () => {
         const asyncFunction = categoryId ? getProductsByCategory : getProducts;
-
+        setLoading(true)
         asyncFunction(categoryId)
             .then(products => {
                 setProducts(products)

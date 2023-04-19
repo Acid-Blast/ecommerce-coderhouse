@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import logo from '../CartWidget/assets/cart.png'
 
-import './Contador.css';
+import './ItemCount.css';
 
-const Contador = ({max, onAdd }) => {
+const ItemCount = ({max, onAdd }) => {
 
     const [count, setCount] = useState(1);
 
@@ -22,4 +22,4 @@ const Contador = ({max, onAdd }) => {
         </div>
     )
 }
-export default Contador;
+export default ItemCount;

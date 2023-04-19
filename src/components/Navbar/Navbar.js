@@ -28,34 +28,34 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link
+            <NavLink
+              className="nav-link"
               as={Link}
               to="/category/vinilos" 
-              className="nav-link" 
               onClick={() => setExpanded(false)}
             > Vinilos
-            </Nav.Link>
-            <Nav.Link
+            </NavLink>
+            <NavLink
+              className='nav-link'
               as={Link}
               to="/category/maderas" 
-              className='nav-link' 
               onClick={() => setExpanded(false)}
             > Maderas
-            </Nav.Link>
-            <Nav.Link
+            </NavLink>
+            <NavLink
+              className='nav-link'
               as={Link}
               to="/category/telas" 
-              className='nav-link' 
               onClick={() => setExpanded(false)}
             > Telas
-            </Nav.Link>
-            <Nav.Link
+            </NavLink>
+            <NavLink
+              className='nav-link'
               as={Link}
               to="/category/sets" 
-              className='nav-link' 
               onClick={() => setExpanded(false)}
             > Sets
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

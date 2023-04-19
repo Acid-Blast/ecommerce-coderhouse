@@ -9,6 +9,7 @@ import img8 from './assets/Screenshot_8.png'
 import img9 from './assets/Screenshot_9.png'
 
 
+
 const products = [
     { 
         id: '1', 
@@ -97,7 +98,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products);
-        }, 1000);
+        }, 500);
     });
 }
 
@@ -105,7 +106,7 @@ export const getProductsById = (productId) => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products.find(prod => prod.id === productId));
-        }, 1000);
+        }, 500);
     });
 }
 
@@ -113,6 +114,6 @@ export const getProductsByCategory = (productCat) => {
     return new Promise((resolve) => {
         setTimeout( () => {
             resolve(products.filter(prod => prod.category === productCat));
-        }, 1000);
+        }, 500);
     });
 }

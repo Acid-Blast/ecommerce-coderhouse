@@ -1,4 +1,4 @@
-import Contador from '../Contador/Contador';
+import ItemCount from '../ItemCount/ItemCount';
 import { useCart } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, quantity
+            id, name, price, quantity, img
         }
         addItem(productToAdd)
     }
@@ -35,7 +35,7 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
                             <Link className='terminar' to='/cart'>Terminar compra</Link>
                             <Link className='terminar' to='/'>Seguir comprando</Link>
                         </div> ) : (
-                        <Contador onAdd={handleOnAdd} max={stock} />
+                        <ItemCount onAdd={handleOnAdd} max={stock} />
                     )
                 }
             </div>

@@ -13,9 +13,10 @@ const Cart = () => {
                 cart.map(prod => {
                     return (
                         <div key={prod.id} className="details-container">
-                            <h2>{prod.name} x {prod.quantity}</h2>
-                            <h2>${prod.price} c/u</h2>
-                            <h2>${prod.price * prod.quantity}</h2>
+                            <img src={prod.img} alt={prod.name} title={prod.name}/>
+                            <h3>{prod.name} x {prod.quantity}</h3>
+                            <h3>${prod.price} c/u</h3>
+                            <h3>${prod.price * prod.quantity}</h3>
                         </div>
                     )
                 })

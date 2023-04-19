@@ -14,6 +14,15 @@
     color: #ddd;
     font-size: 1rem;
 }
+.cartWidget-container .number{
+    align-self: flex-start;
+    background-color: var(--walnut-brown);
+    border-radius: 100%;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 3px;
+
+}
 
 .cart-img{
     width: 2rem;
@@ -24,7 +33,7 @@
 }
 .cartWidget-container:hover{
     cursor: pointer;
-    filter: drop-shadow(0 0 7px var(--caramel));
+    filter: drop-shadow(0 0 5px var(--walnut-brown));
 }
 .cart-btn{
     background-color: transparent;

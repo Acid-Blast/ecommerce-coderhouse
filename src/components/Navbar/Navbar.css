@@ -13,10 +13,10 @@ nav{
 
 }
 .active{
-    color: var(--caramel);
+    color: var(--caramel) !important;
     text-decoration: none;
-    vertical-align: middle;
 }
+
 
 
 /* ------------- */
@@ -38,6 +38,7 @@ nav{
     width: 3rem;
     margin: 1rem;
 }
+
 
 @media screen and (max-width: 600px) {
     .brand-div h2{

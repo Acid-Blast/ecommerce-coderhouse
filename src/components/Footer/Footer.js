@@ -16,7 +16,7 @@ const Footer = (props) => {
                     <ul>
                         <li>
                             <a href='https://www.instagram.com/sublim.art_/' target="_blank" rel="noreferrer">
-                                <img src='https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-icon-download-icons-12.png' alt='link a instagram'/>
+                                <img src='https://i.pinimg.com/originals/25/b8/17/25b817e94a86009fa7f32810911c0fa6.png' alt='link a instagram'/>
                                 Instagram
                             </a>
                         </li>

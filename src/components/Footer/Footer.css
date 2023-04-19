@@ -33,6 +33,8 @@ footer section aside h4{
 }
 footer img{
     width: 25px;
+    height: 25px;
+    border-radius: 100%;
     filter: invert(1);
     opacity: .6;
 
