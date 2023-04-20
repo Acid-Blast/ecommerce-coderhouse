@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './ItemDetail.css'
 
-const ItemDetail = ({id, name, price, category, img, stock, description}) => {
+const ItemDetail = ({id, name, price, img, stock, description}) => {
     const { addItem, isInCart } = useCart()
 
     const handleOnAdd = (quantity) => {
@@ -24,19 +24,22 @@ const ItemDetail = ({id, name, price, category, img, stock, description}) => {
                 <p>{description}</p>
                 
                 <div className='info-detail'>
-                    <h3>Stock: {stock}</h3>
                     <h3 className='price'>Precio: ${price}</h3>
-                    <h3>Categoria: {category}</h3>
+                    <h3>Unidades disponibles: {stock}</h3>
                 </div>
                 
                 {
-                    isInCart(id) ? (
-                        <div>
-                            <Link className='terminar' to='/cart'>Terminar compra</Link>
+                    isInCart(id) 
+                        ? (
+                        <div className='btns-terminar'>
                             <Link className='terminar' to='/'>Seguir comprando</Link>
-                        </div> ) : (
-                        <ItemCount onAdd={handleOnAdd} max={stock} />
-                    )
+                            <Link className='terminar' to='/cart'>Terminar compra</Link>
+                        </div>
+                        ) : (
+                            stock !== 0 
+                                ? <ItemCount onAdd={handleOnAdd} max={stock} price={price}/>
+                                : <h3>Sin stock</h3>
+                        )
                 }
             </div>
         </div>

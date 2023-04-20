@@ -3,7 +3,7 @@ import logo from '../CartWidget/assets/cart.png'
 
 import './ItemCount.css';
 
-const ItemCount = ({max, onAdd }) => {
+const ItemCount = ({max, onAdd, price }) => {
 
     const [count, setCount] = useState(1);
 
@@ -15,9 +15,10 @@ const ItemCount = ({max, onAdd }) => {
         <div className='count-container'>
             <div className='contador'>
                 <button onClick={sumar}> + </button>
-                <h3> {count} </h3>
+                {count}
                 <button onClick={restar}> - </button>
             </div>
+            <h3>Total: ${count *  price}</h3>
             <button className='btn-addToCart' onClick={() => onAdd(count)}>Agregar <img src={logo} alt="logo"/></button>
         </div>
     )

@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: center;
+    align-items: center;
     padding: 7px;
     border-radius: 15px;
-    width: 150px;
+    width: 200px;
+    /* border: 1px solid red; */
 }
 
 .count-container h3{
@@ -33,8 +33,6 @@
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    margin: 0 auto;
-    padding: 0;
     text-align: center;
 }
 .count-container button:hover{

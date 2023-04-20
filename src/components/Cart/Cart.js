@@ -9,6 +9,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
+
             <img src={img} alt="carrito"/>
             <h1 className="title">Carrito</h1>
             <div className="product-list">
