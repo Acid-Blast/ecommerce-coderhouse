@@ -1,4 +1,4 @@
-
+/*
 const products = [
         { 
             id: '1', 
@@ -106,3 +106,4 @@ export const getProductsByCategory = (productCat) => {
         }, 500);
     });
 }
+*/

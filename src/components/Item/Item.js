@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom';
 import './Item.css';
 
 
-const Item = ({name, img, description, id}) => {
+const Item = ({name, img, id, price}) => {
     return (
-        <div className="item" tabIndex={0}> 
+        <Link className="item" to={`/item/${id}`}>
             <h2>{name}</h2>
             <img src={img} alt={name}/>
-            {/* <p>{description}</p> */}
-            <div className='btn-container'>
-                <Link to={`/item/${id}`} className='btn'>Ver detalle </Link>
-            </div>
-        </div>
+            <h3>${price} x unidad</h3>
+        </Link>
     )
 }
 export default Item;
