@@ -15,7 +15,7 @@ const ItemCount = ({max, onAdd, price }) => {
         <div className='count-container'>
             <div className='contador'>
                 <button onClick={sumar}> + </button>
-                {count}
+                <h3>{count}</h3>
                 <button onClick={restar}> - </button>
             </div>
             <h3>Total: ${count *  price}</h3>

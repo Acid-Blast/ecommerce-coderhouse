@@ -9,7 +9,6 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
-
             <img src={img} alt="carrito"/>
             <h1 className="title">Carrito</h1>
             <div className="product-list">
@@ -29,14 +28,17 @@ const Cart = () => {
                 })
                 }
             </div>
-
-            <h2>Total: ${total}</h2>
-            <button className="btn-order clearCart" onClick={clearCart}>Vaciar carrito</button>
-
-            
-            <Link to='/checkout' className="btn-order">Generar Orden</Link>
+            {
+                total 
+                    ? 
+                    <div className="fullCart-container">
+                        <h2>Total: ${total}</h2>
+                        <button className="btn-order clearCart" onClick={clearCart}>Vaciar carrito</button>
+                        <Link to='/checkout' className="btn-order">Generar Orden</Link> 
+                    </div> 
+                    : <h2>Carrito vacio</h2>
+            }
         </div>
     )
 }
-
 export default Cart

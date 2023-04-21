@@ -17,7 +17,11 @@
 .count-container .contador{
     display: flex;
     flex-direction: row;
-    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    /* border: 1px solid red; */
 }
 
 .count-container .contador button{
@@ -33,15 +37,14 @@
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    text-align: center;
 }
 .count-container button:hover{
     box-shadow: 0 0 2px black, inset 0 0 5px black;
-
 }
 
 .count-container .btn-addToCart{
     width: fit-content;
+    margin: 0 auto;
     border: 1px solid red;
     padding: .6rem;
     border: none;
