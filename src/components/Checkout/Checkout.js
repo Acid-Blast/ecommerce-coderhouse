@@ -85,7 +85,7 @@ const Checkout = () => {
     return (
         <div className="checkout-container">
             <h1>Finalizar orden</h1>
-            <h2>Completar datos de entrega</h2>
+            <h2>Completa los datos de entrega</h2>
             <ContactForm onConfirm={createOrder}/>
         </div>
     )

@@ -17,8 +17,11 @@
     --alpha-walnut-brown: #59564760;
     --alpha-chamoisee: #93765740;
     --alpha-caramel: #BA855440;
-
-  }
+}
+*::selection{
+  background-color: #1117;
+  color: #eee;
+}
 
 /* scrollbar */
 /* width */

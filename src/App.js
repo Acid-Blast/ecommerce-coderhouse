@@ -32,7 +32,7 @@ const App = () => {
             <Route path='/checkout' element={<Checkout />}/>
           </Routes>
         </CartProvider>
-        <Footer version={'v0.1.2'}/>
+        <Footer version={'v1.0.1'}/>
      </BrowserRouter>
     </div>
   );

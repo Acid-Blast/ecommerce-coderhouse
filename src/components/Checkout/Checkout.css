@@ -7,7 +7,7 @@
 }
 
 .checkout-container h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .fillScreen{
@@ -32,6 +32,6 @@
        font-size: 2rem;
     }
     .orderView h2{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
