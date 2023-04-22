@@ -22,6 +22,7 @@ const ItemListContainer = () => {
 
         getDocs(productsRef)
             .then(snapshot => {
+                console.log("pidiendo datos")
                 const productsAdapted = snapshot.docs.map(doc => {
                     const data = doc.data()
                     return {id: doc.id, ...data}
