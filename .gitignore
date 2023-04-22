@@ -19,6 +19,8 @@
 .env.test.local
 .env.production.local
 envs.txt
+firebaseUpload.js
+
 
 npm-debug.log*
 yarn-debug.log*
