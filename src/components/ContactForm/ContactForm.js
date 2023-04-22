@@ -2,20 +2,17 @@ import { useState } from "react"
 
 import './ContactForm.css'
 
-const fecha = new Date();
-const date = `${fecha.getDate()}/${fecha.getMonth()}/${fecha.getFullYear()}`;
-
 const ContactForm = ({ onConfirm }) => {
-    const [name, setName] = useState('')
-    const [lastname, setLastName] = useState('')
-    const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
-    const [address, setAddress] = useState('')
-    const [comments, setComments] = useState('')
+    const [name, setName] = useState('');
+    const [lastname, setLastName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [email, setEmail] = useState('');
+    const [address, setAddress] = useState('');
+    const [comments, setComments] = useState('');
+    const date = `${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`;
     
     const handleSubmit = (e) => {
         e.preventDefault();
-
 
         const userData = {
             name,

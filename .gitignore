@@ -18,8 +18,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-envs.txt
 firebaseUpload.js
+Mercadolibre.js
 
 
 npm-debug.log*

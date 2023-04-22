@@ -77,6 +77,10 @@ const Checkout = () => {
     }
 
     if(orderId) {
+        //guardar carrito para mostrar junto con numero de orden antes de vaciarlo
+
+        
+
         return (
             <div className="fillScreen orderView">
                 <h1>Numero de Orden:</h1>
