@@ -29,8 +29,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
                 </div>
                 
                 {
-                    isInCart(id) 
-                        ? (
+                    isInCart(id) ? (
                         <div className='btns-terminar'>
                             <Link className='terminar' to='/'>Seguir comprando</Link>
                             <Link className='terminar' to='/cart'>Terminar compra</Link>
@@ -39,7 +38,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
                             stock !== 0 
                                 ? <ItemCount onAdd={handleOnAdd} max={stock} price={price}/>
                                 : <h3>Sin stock</h3>
-                        )
+                        ) 
                 }
             </div>
         </div>

@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../Loader/Loader';
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
+import { sweetAlert } from '../../services/sweetAlert/sweetAlert';
 
 
 import './ItemDetailContainer.css';
@@ -28,7 +29,7 @@ const ItemDetailContainer = () => {
 
             })
             .catch(error => {
-                console.log(error)
+                sweetAlert('Error', error, 'error')
             })
             .finally(() => setLoading(false))
 

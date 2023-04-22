@@ -2,6 +2,7 @@ import { collection, query, where, documentId, getDocs, writeBatch, addDoc } fro
 import { useCart } from "../../context/CartContext"
 import { db } from "../../services/firebase/firebaseConfig"
 import { useState } from 'react'
+import { sweetAlert } from "../../services/sweetAlert/sweetAlert"
 import ContactForm from "../ContactForm/ContactForm"
 
 import './Checkout.css'
@@ -55,11 +56,13 @@ const Checkout = () => {
                 clearCart()
                 setOrderId(orderAdded.id)
 
+                sweetAlert('Orden creada', `La orden ha sido creada con exito`, 'success')
+
             } else {
-                alert("No hay stock de algunos productos")
+                sweetAlert('Error','No hay stock de algunos productos', 'error')
             }
         } catch (error) {
-            alert("hubo un error")
+            sweetAlert('Error','Error inesperado, intente nuevamente', 'error')
         } finally {
             setLoading(false)
         } 

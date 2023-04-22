@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../Loader/Loader';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
+import { sweetAlert } from '../../services/sweetAlert/sweetAlert';
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
@@ -28,7 +29,7 @@ const ItemListContainer = () => {
                 setProducts(productsAdapted);
             })
             .catch(error => {
-                console.log(error)
+                sweetAlert('Error', error, 'error');
             })
             .finally(() => setLoading(false))
 
