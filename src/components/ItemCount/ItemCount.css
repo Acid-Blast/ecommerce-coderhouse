@@ -4,15 +4,11 @@
     justify-content: center;
     align-items: center;
     padding: 7px;
-    border-radius: 15px;
     width: 200px;
     /* border: 1px solid red; */
 }
 
-.count-container h3{
-    margin: 1rem;
-    text-shadow: 0 0 5px var(--walnut-brown);
-}
+
 
 .count-container .contador{
     display: flex;
@@ -24,6 +20,12 @@
     /* border: 1px solid red; */
 }
 
+.count-container .contador h3{
+    width: 1rem;
+    margin: .7rem;
+    text-shadow: 0 0 7px var(--walnut-brown);
+}
+
 .count-container .contador button{
     font-weight: bolder;
     text-align: center;
@@ -31,15 +33,14 @@
     vertical-align: middle;
     color: #333;
     background-color: #fff8;
-    text-shadow: 0 0 7px black;
     box-shadow: 0 0 5px black;
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 25px;
     height: 25px;
 }
 .count-container button:hover{
-    box-shadow: 0 0 2px black, inset 0 0 5px black;
+    box-shadow: 0 0 5px black, inset 0 0 5px black;
 }
 
 .count-container .btn-addToCart{

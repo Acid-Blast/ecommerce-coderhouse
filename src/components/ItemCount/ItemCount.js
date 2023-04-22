@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from '../CartWidget/assets/cart.png'
 
 import './ItemCount.css';
 
@@ -14,12 +13,12 @@ const ItemCount = ({max, onAdd, price }) => {
     return(
         <div className='count-container'>
             <div className='contador'>
-                <button onClick={sumar}> + </button>
-                <h3>{count}</h3>
                 <button onClick={restar}> - </button>
+                <h3>{count}</h3>
+                <button onClick={sumar}> + </button>
             </div>
             <h3>Total: ${count *  price}</h3>
-            <button className='btn-addToCart' onClick={() => onAdd(count)}>Agregar <img src={logo} alt="logo"/></button>
+            <button className='btn-addToCart' onClick={() => onAdd(count)}>Agregar <img src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/cart.png?alt=media&token=9383e64d-6233-42db-bbd2-f57af65dcf91" alt="logo"/></button>
         </div>
     )
 }

@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react';
 
-import logo from './assets/logo.png';
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ const MyNavbar = () => {
       <Container>
         <Navbar.Brand  onClick={() => setExpanded(false)}>
           <NavLink href="#" className='brand-div' to="/#">
-              <img className="img-logo" src={logo} alt='logo'/>
+              <img className="img-logo" src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/logo.png?alt=media&token=8d281d3f-3244-4ab5-8c7d-8e905b4e9820" alt='logo'/>
               <h2>Sublim-Art</h2>
           </NavLink>
         </Navbar.Brand>

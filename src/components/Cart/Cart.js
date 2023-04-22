@@ -1,6 +1,5 @@
 import { useCart } from "../../context/CartContext"
 import { Link } from 'react-router-dom'
-import img from '../CartWidget/assets/cart.png'
 
 import './Cart.css'
 
@@ -9,7 +8,7 @@ const Cart = () => {
 
     return (
         <div className="cart-container">
-            <img src={img} alt="carrito"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/cart.png?alt=media&token=9383e64d-6233-42db-bbd2-f57af65dcf91" alt="carrito"/>
             <h1 className="title">Carrito</h1>
             <div className="product-list">
                 {
