@@ -4,12 +4,13 @@ Sublim-Art es un ecommerce para un servicio de venta de productos sublimados pre
 
 ## Descripción
 
-Aquí es donde se proporciona una descripción más detallada del proyecto, incluyendo sus objetivos, características, funcionalidades, etc. 
+La aplicación cuenta con distintas catogorias de productos para filtrar, se pueden agregar productos a un carrito y generar una orden de compra
 
 ## Tecnologías
 
-- Lista de tecnologías utilizadas en el proyecto, por ejemplo:
+- Lista de tecnologías utilizadas en el proyecto:
   - REACT JS
+  - REACT-ROUTER-DOM
   - BOOSTRAP
   - FIREBASE
 
