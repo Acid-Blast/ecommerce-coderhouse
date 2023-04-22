@@ -9,7 +9,9 @@ export const sweetAlert = ( title, message, icon) => {
         title: <p>{title}</p>,
         html: <i>{message}</i>,
         icon: icon,
-        width: 'fit-content'
+        width: 'fit-content',
+        confirmButtonColor: '#595647ff',
+        background: 'linear-gradient(to top, var(--background), var(--caramel))'
     })
             
     
