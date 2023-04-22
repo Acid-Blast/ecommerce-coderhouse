@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom';
 import { Loader } from '../Loader/Loader';
-import { getDocs, collection, query, where } from 'firebase/firestore';
-import { db } from '../../services/firebase/firebaseConfig';
 import { sweetAlert } from '../../services/sweetAlert/sweetAlert';
+import { getProducts } from '../../services/firebase/products';
+
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
@@ -13,30 +13,23 @@ const ItemListContainer = () => {
 
     const [loading, setLoading] = useState(true)
 
-    useEffect( () => {
+    useEffect(() => {
         setLoading(true);
 
-        const productsRef = categoryId
-            ? query(collection(db, 'Productos'), where('category', '==', categoryId))
-            :  collection(db, 'Productos')
-
-        getDocs(productsRef)
-            .then(snapshot => {
-                const productsAdapted = snapshot.docs.map(doc => {
-                    const data = doc.data()
-                    return {id: doc.id, ...data}
-                }) 
-                setProducts(productsAdapted);
+        getProducts(categoryId)
+            .then(products => {
+                setProducts(products)
             })
-            .catch(error => {
-                sweetAlert('Error', error, 'error');
+            .catch((error) => {
+                sweetAlert('Error', error, 'error')
             })
-            .finally(() => setLoading(false))
-
+            .finally(() => {
+                setLoading(false)
+            })
         
+        }, [categoryId]) 
         
-    }, [categoryId])
-
+            
     if(loading) return <Loader />
     
     return (

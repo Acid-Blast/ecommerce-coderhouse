@@ -2,9 +2,8 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Loader } from '../Loader/Loader';
-import { getDoc, doc } from 'firebase/firestore';
-import { db } from '../../services/firebase/firebaseConfig';
 import { sweetAlert } from '../../services/sweetAlert/sweetAlert';
+import { getProductsById } from '../../services/firebase/products';
 
 
 import './ItemDetailContainer.css';
@@ -12,26 +11,24 @@ import './ItemDetailContainer.css';
 
  
 const ItemDetailContainer = () => {
-    const [products, setProducts] = useState([])
+    const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(true);
     const { itemId } = useParams();
 
     useEffect( () => {  
         setLoading(true)
 
-        const productref = doc(db, 'Productos', itemId);
-
-        getDoc(productref)
-            .then(snapshot => {
-                const data = snapshot.data();
-                const productAdapted = {id: snapshot.id, ...data};
-                setProducts(productAdapted);
-
+        getProductsById(itemId)
+            .then(product => {
+                setProduct(product)
             })
-            .catch(error => {
+            .catch((error) => {
                 sweetAlert('Error', error, 'error')
             })
-            .finally(() => setLoading(false))
+            .finally(() => {
+                setLoading(false)
+            })
+
 
     }, [itemId])
 
@@ -39,7 +36,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='itemDetailContainer'>
-            <ItemDetail {...products}/>
+            <ItemDetail {...product}/>
         </div>
     )
 }

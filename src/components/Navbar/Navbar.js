@@ -1,17 +1,32 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
+import { getCategories } from '../../services/firebase/categories';
+import { sweetAlert } from '../../services/sweetAlert/sweetAlert';
+import { adaptCategories } from '../../adapters/adaptCategories';
 
 import './Navbar.css';
 
 const MyNavbar = () => {
-
   const [expanded, setExpanded] = useState(false);
+  const [categories, setCategories] = useState([])
 
+  useEffect(() => {
+
+    getCategories()
+      .then(snapshot => {
+        const categoriesAdapted = snapshot.docs.map(doc => {
+          return adaptCategories(doc)
+        })
+        setCategories(categoriesAdapted)
+      })
+      .catch(error => sweetAlert('Error', `${error}`, 'error'))
+      
+    }, [])
+    
   return(
     <Navbar expanded={expanded} expand="lg" variant="dark" fixed="top">
       <Container>
@@ -27,34 +42,21 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
-            <NavLink
-              className="nav-link"
-              as={Link}
-              to="/category/vinilos" 
-              onClick={() => setExpanded(false)}
-            > Vinilos
-            </NavLink>
-            <NavLink
-              className='nav-link'
-              as={Link}
-              to="/category/maderas" 
-              onClick={() => setExpanded(false)}
-            > Maderas
-            </NavLink>
-            <NavLink
-              className='nav-link'
-              as={Link}
-              to="/category/telas" 
-              onClick={() => setExpanded(false)}
-            > Telas
-            </NavLink>
-            <NavLink
-              className='nav-link'
-              as={Link}
-              to="/category/sets" 
-              onClick={() => setExpanded(false)}
-            > Sets
-            </NavLink>
+            {
+              categories.map(cat => {
+                return (
+                  <NavLink
+                    key={cat.id}
+                    className="nav-link"
+                    as={Link}
+                    to={`/category/${cat.slug}`} 
+                    onClick={() => setExpanded(false)}
+                  >
+                  {cat.label}
+                  </NavLink>
+                )
+              })
+            }
           </Nav>
         </Navbar.Collapse>
       </Container>

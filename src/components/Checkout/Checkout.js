@@ -4,10 +4,12 @@ import { db } from "../../services/firebase/firebaseConfig"
 import { useState } from 'react'
 import { sweetAlert } from "../../services/sweetAlert/sweetAlert"
 import ContactForm from "../ContactForm/ContactForm"
+import { useNavigate } from "react-router"
 
 import './Checkout.css'
 
 const Checkout = () => {
+    const navigate = useNavigate();
     const [orderId, setOrderId] = useState('')
     const [loading, setLoading] = useState(false)
     const { cart, total, clearCart } = useCart()
@@ -63,6 +65,9 @@ const Checkout = () => {
             }
         } catch (error) {
             sweetAlert('Error','Error inesperado, intente nuevamente', 'error')
+            setTimeout(() => {
+                navigate('/Cart')
+            }, 2000)
         } finally {
             setLoading(false)
         } 

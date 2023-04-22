@@ -1,4 +1,45 @@
-# Proyecto para curso de React en Coderhouse
+# Sublim-Art
 
-Este proyecto va a ser un Ecommerce a modo de practica para usar la tecnologia de React
+Sublim-Art es un ecommerce para un servicio de venta de productos sublimados presonalizados
+
+## Descripción
+
+Aquí es donde se proporciona una descripción más detallada del proyecto, incluyendo sus objetivos, características, funcionalidades, etc. 
+
+## Tecnologías
+
+- Lista de tecnologías utilizadas en el proyecto, por ejemplo:
+  - REACT JS
+  - BOOSTRAP
+  - FIREBASE
+
+## Instalación
+
+Para poder utilizar este proyecto, necesitarás tener instalado [Node.js](https://nodejs.org/).
+
+- Clona este repositorio en tu computadora
+- En la carpeta raíz del proyecto, ejecuta el comando "npm install" para instalar todas las dependencias necesarias
+ 
+
+- Para conectar con Firebase, añadir las variables de entorno al archivo .env usando la configuracion de su proyecto
+
+```sh
+REACT_APP_FIREBASE_API_KEY=<API_KEY>
+REACT_APP_FIREBASE_AUTH_DOMAIN=<AUTH_DOMAIN>
+REACT_APP_FIREBASE_PROJECT_ID=<PROJECT_ID>
+REACT_APP_FIREBASE_STORAGE_BUCKET=<STORAGE_BUCKET>
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<MESSAGING_SENDER_ID>
+REACT_APP_FIREBASE_APP_ID=<APP_ID>
+```
+
+## Uso
+
+- Ejecuta el comando npm start para iniciar el servidor local y ver el proyecto en tu navegador
+
+```sh
+npm start
+```
+- Abre el navegador en `http://localhost:3000`
+
+
 
