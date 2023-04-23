@@ -5,14 +5,15 @@ import { sweetAlert } from '../services/sweetAlert/sweetAlert';
 const CartContext = createContext('')
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState( JSON.parse(localStorage.getItem('cart')) || [])
 
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
             sweetAlert('Producto agregado al carrito', `Se agregó correctamente ${productToAdd.name} x ${productToAdd.quantity}`, 'success')
+
+            localStorage.setItem('cart', JSON.stringify(cart))
         }
-        
     }
 
     const isInCart = (id) => {

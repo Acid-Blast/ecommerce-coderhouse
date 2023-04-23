@@ -82,7 +82,7 @@ const Checkout = () => {
     if(orderId) {
         return (
             <div className="fillScreen orderView">
-                <h1>Numero de Orden:</h1>
+                <h1>Codigo de orden:</h1>
                 <h2>{orderId}</h2>
             </div>
         )

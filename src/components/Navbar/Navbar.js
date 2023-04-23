@@ -30,14 +30,13 @@ const MyNavbar = () => {
   return(
     <Navbar expanded={expanded} expand="lg" variant="dark" fixed="top">
       <Container>
+        <CartWidget />
         <Navbar.Brand  onClick={() => setExpanded(false)}>
-          <NavLink href="#" className='brand-div' to="/#">
+          <NavLink href="#" className='brand-div' to="/">
               <img className="img-logo" src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/logo.png?alt=media&token=8d281d3f-3244-4ab5-8c7d-8e905b4e9820" alt='logo'/>
               <h2>Sublim-Art</h2>
           </NavLink>
         </Navbar.Brand>
-
-        <CartWidget />
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}/>
         <Navbar.Collapse id="responsive-navbar-nav">
