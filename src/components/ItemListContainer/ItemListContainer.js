@@ -21,12 +21,11 @@ const ItemListContainer = () => {
                 setProducts(products)
             })
             .catch((error) => {
-                sweetAlert('Error', error, 'error')
+                sweetAlert('Error', `${error}`, 'error')
             })
             .finally(() => {
                 setLoading(false)
             })
-        
         }, [categoryId]) 
         
             

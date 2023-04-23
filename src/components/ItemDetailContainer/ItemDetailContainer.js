@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
                 setProduct(product)
             })
             .catch((error) => {
-                sweetAlert('Error', error, 'error')
+                sweetAlert('Error', `${error}`, 'error')
             })
             .finally(() => {
                 setLoading(false)

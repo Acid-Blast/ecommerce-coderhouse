@@ -14,8 +14,6 @@ const Checkout = () => {
     const [loading, setLoading] = useState(false)
     const { cart, total, clearCart } = useCart()
 
-
-
     const createOrder = async (userData) => {
         try {
             setLoading(true)
@@ -55,18 +53,18 @@ const Checkout = () => {
     
                 const orderAdded = await addDoc(ordersRef, objOrder)
                 
-                clearCart()
                 setOrderId(orderAdded.id)
 
-                sweetAlert('Orden creada', `La orden ha sido creada con exito`, 'success')
+                clearCart()
 
+                sweetAlert('Orden creada', `La orden ha sido creada con exito`, 'success')
             } else {
                 sweetAlert('Error','No hay stock de algunos productos', 'error')
             }
         } catch (error) {
             sweetAlert('Error','Error inesperado, intente nuevamente', 'error')
             setTimeout(() => {
-                navigate('/Cart')
+                navigate('/')
             }, 2000)
         } finally {
             setLoading(false)
@@ -82,10 +80,6 @@ const Checkout = () => {
     }
 
     if(orderId) {
-        //guardar carrito para mostrar junto con numero de orden antes de vaciarlo
-
-        
-
         return (
             <div className="fillScreen orderView">
                 <h1>Numero de Orden:</h1>
@@ -102,5 +96,4 @@ const Checkout = () => {
         </div>
     )
 }
-
 export default Checkout
