@@ -6,13 +6,13 @@ const CartContext = createContext('')
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState( JSON.parse(localStorage.getItem('cart')) || [])
+    localStorage.setItem('cart', JSON.stringify(cart))
 
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
-            sweetAlert('Producto agregado al carrito', `Se agregó correctamente ${productToAdd.name} x ${productToAdd.quantity}`, 'success')
-
             localStorage.setItem('cart', JSON.stringify(cart))
+            sweetAlert('Producto agregado al carrito', `Se agregó correctamente ${productToAdd.name} x ${productToAdd.quantity}`, 'success')
         }
     }
 
@@ -23,6 +23,7 @@ export const CartProvider = ({ children }) => {
     const removeItem = (id) => {
         const updatedCart = cart.filter(prod => prod.id !== id)
         setCart(updatedCart)
+        localStorage.setItem('cart', JSON.stringify(updatedCart))
     }
     
     const getTotalQuantity = () => {
@@ -34,7 +35,6 @@ export const CartProvider = ({ children }) => {
 
         return totalQuantity
     }
-
     const totalQuantity = getTotalQuantity()
 
     const getTotal = () => {
@@ -51,6 +51,7 @@ export const CartProvider = ({ children }) => {
 
     const clearCart = () => {
         setCart([])
+        localStorage.setItem('cart', JSON.stringify(cart))
     }
 
     return (
