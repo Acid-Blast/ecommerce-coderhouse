@@ -1,6 +1,6 @@
 # Sublim-Art
 
-Sublim-Art es un ecommerce para un servicio de venta de productos sublimados presonalizados
+Sublim-Art es un ecommerce para un servicio de venta de productos sublimados personalizados
 
 ## Descripción
 
