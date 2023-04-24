@@ -19,6 +19,7 @@
 .env.test.local
 .env.production.local
 firebaseUpload.js
+updateStock.js
 Mercadolibre.js
 
 

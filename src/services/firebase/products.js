@@ -2,7 +2,6 @@ import { getDocs, getDoc, doc, collection, query, where } from 'firebase/firesto
 import { db } from '../../services/firebase/firebaseConfig';
 import { createProductFromFirebase } from '../../adapters/createProductFromFirestore';
 
-
 export const getProducts = (categoryId) => {
         const productsRef = categoryId
             ? query(collection(db, 'Productos'), where('category', '==', categoryId))
@@ -30,3 +29,4 @@ export const getProductsById = (itemId) =>{
                 return error
             })
 }
+
