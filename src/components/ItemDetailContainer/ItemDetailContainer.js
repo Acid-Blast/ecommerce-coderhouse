@@ -9,7 +9,6 @@ import { getProductsById } from '../../services/firebase/products';
 import './ItemDetailContainer.css';
 
 
- 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(true);

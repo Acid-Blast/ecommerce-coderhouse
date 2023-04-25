@@ -14,20 +14,9 @@
     height: 50vmin;
 }
 
-.orderView h1{
-    font-size: 4rem;
-}
-
-.orderView h2{
-    font-size: 4.5rem;
-    margin: 0 auto;
-}
-
 @media screen and (max-width: 1000px){
     .orderView h1{
        font-size: 2rem;
     }
-    .orderView h2{
-        font-size: 1.5rem;
-    }
+
 }

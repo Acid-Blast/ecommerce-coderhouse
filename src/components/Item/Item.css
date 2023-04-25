@@ -33,8 +33,8 @@
 
 .item img{
     width: 250px;
-    box-shadow: 0 0 5px #0008;
-    border-radius: 10px;
+    box-shadow:  0 0 7px #000a;
+    border-radius: 5px;
 }
 .btn-container .btn{
     padding: 7px;

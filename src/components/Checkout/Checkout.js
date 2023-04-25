@@ -10,7 +10,6 @@ import './Checkout.css'
 
 const Checkout = () => {
     const navigate = useNavigate();
-    const [orderId, setOrderId] = useState('')
     const [loading, setLoading] = useState(false)
     const { cart, total, clearCart } = useCart()
 
@@ -53,11 +52,11 @@ const Checkout = () => {
     
                 const orderAdded = await addDoc(ordersRef, objOrder)
                 
-                setOrderId(orderAdded.id)
-
                 clearCart()
-
+                
                 sweetAlert('Orden creada', `La orden ha sido creada con exito`, 'success')
+
+                navigate(`/order/${orderAdded.id}`)
             } else {
                 sweetAlert('Error','No hay stock de algunos productos', 'error')
             }
@@ -78,16 +77,7 @@ const Checkout = () => {
             </div>
         )
     }
-
-    if(orderId) {
-        return (
-            <div className="fillScreen orderView">
-                <h1>Codigo de orden:</h1>
-                <h2>{orderId}</h2>
-            </div>
-        )
-    }
-
+    
     return (
         <div className="checkout-container">
             <h1>Finalizar orden</h1>
