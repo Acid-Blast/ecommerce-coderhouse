@@ -44,7 +44,7 @@ const OrderDetails = () => {
             orderCart.map(item => (
                 <li key={item.id} className="order__list__item">
                     <p>{item.name} x{item.quantity}</p>
-                    <p>${item.price} c/u</p>
+                    <p>${item.price * item.quantity}</p>
                 </li>
             ))
             }

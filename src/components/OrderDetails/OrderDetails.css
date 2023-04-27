@@ -11,10 +11,6 @@
        background: linear-gradient(to top, var(--alpha-caramel), var(--walnut-brown));
        box-shadow: inset 0 0 10px var(--walnut-brown);  
 }
-
-.order-container h1{
-    /* text-shadow: 2px 2px 5px #eee3; */
-}
     
 .order-container .order__data{
     display: flex;
@@ -78,6 +74,9 @@
     .order-container{
         width: 100vmin;
         border-radius: 0;
+        box-shadow: 0 0 7px var(--walnut-brown); 
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
     .order-container .order__data{

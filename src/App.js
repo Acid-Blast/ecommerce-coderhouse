@@ -33,7 +33,7 @@ const App = () => {
             <Route path='/order/:orderId' element={<OrderDetails />}/>
           </Routes>
         </CartProvider>
-        <Footer version={'v1.3.1'}/>
+        <Footer version={'v1.3.2'}/>
      </BrowserRouter>
     </div>
   );
