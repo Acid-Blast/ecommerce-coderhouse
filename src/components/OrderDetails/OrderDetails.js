@@ -28,7 +28,7 @@ const OrderDetails = () => {
                 <h3><span className="bold">Fecha: </span>{newOrder.date}</h3>
                 <h3><span className="bold">Nombre: </span>{newOrder.name} {newOrder.lastname}</h3>
                 <h3><span className="bold">Mail: </span>{newOrder.email}</h3>
-                <h3><span className="bold">Tel: </span>{newOrder.phone}</h3>
+                <h3><span className="bold">Telefono: </span>{newOrder.phone}</h3>
                 <h3><span className="bold">Dirección de entrega: </span>{newOrder.address}</h3>
                 {
                     newOrder.comments !== "" && <h3><span className="bold">Comentarios: </span>{newOrder.comments}</h3>
