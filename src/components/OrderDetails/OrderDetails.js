@@ -2,6 +2,7 @@ import { getOrder } from "../../services/firebase/orders"
 import { useState, useEffect } from "react";
 import { sweetAlert } from "../../services/sweetAlert/sweetAlert";
 import { useParams } from "react-router-dom";
+import './OrderDetails.css'
 
 
 const OrderDetails = () => {
@@ -21,28 +22,39 @@ const OrderDetails = () => {
 
     return (
         <div className="order-container">
-            <h1>Details</h1>
-            <h2>{orderId}</h2>
-            <h3>{newOrder.name}</h3>
-            <h3>{newOrder.lastname}</h3>
-            <h3>{newOrder.email}</h3>
-            <h3>{newOrder.phone}</h3>
-            <h3>{newOrder.address}</h3>
-            <h3>{newOrder.date}</h3>
-            <h3>{newOrder.comments}</h3>
-            <h3>{newOrder.total}</h3>
+            <h1 className="bold">Detalles de la orden</h1>
+            <div className="order__data">
+                <h2><span className="bold">Codigo de orden: </span>{orderId}</h2>
+                <h3><span className="bold">Fecha: </span>{newOrder.date}</h3>
+                <h3><span className="bold">Nombre: </span>{newOrder.name} {newOrder.lastname}</h3>
+                <h3><span className="bold">Mail: </span>{newOrder.email}</h3>
+                <h3><span className="bold">Tel: </span>{newOrder.phone}</h3>
+                <h3><span className="bold">Dirección de entrega: </span>{newOrder.address}</h3>
+                {
+                    newOrder.comments !== "" && <h3><span className="bold">Comentarios: </span>{newOrder.comments}</h3>
+                }
+            </div>
 
-            <ul>
+            <ul className="order__list">
+                <li className="order__list__item order__list__header">
+                    <p>Producto</p>
+                    <p>Subtotal</p>
+                </li>
             {
             orderCart.map(item => (
-                <li key={item.id}>
-                    <p>{item.name}</p>
-                    <p>{item.price}</p>
-                    <p>{item.quantity}</p>
+                <li key={item.id} className="order__list__item">
+                    <p>{item.name} x{item.quantity}</p>
+                    <p>${item.price} c/u</p>
                 </li>
             ))
             }
+                <li><span className="separador"> </span></li>
+                <li className="order__list__total"><h3>Total: ${newOrder.total}</h3></li>
             </ul>
+
+            <p>
+                El pedido ya está listo! Pronto recibiras un correo con los detalles de la orden y el envio.
+            </p>
         </div>
     )
 }
