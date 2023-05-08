@@ -32,7 +32,7 @@ const ContactForm = ({ onConfirm }) => {
     return (
         <form className="form-container" onSubmit={handleSubmit} method="GET">
             <div>
-                <label  >Nombre</label>
+                <label >Nombre</label>
                 <input value={name} type="text" onChange={(e) => setName(e.target.value)}  name="name" autoComplete="off" required/>
             </div>
 
@@ -57,7 +57,7 @@ const ContactForm = ({ onConfirm }) => {
             </div>
             
             <div>
-                <label>Comentarios</label>
+                <label>Referencias</label>
                 <textarea value={comments} type="text" onChange={(e) => setComments(e.target.value)}></textarea>
             </div>
             

@@ -1,15 +1,17 @@
 import ItemCount from '../ItemCount/ItemCount';
 import { useCart } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import './ItemDetail.css'
 
 const ItemDetail = ({id, name, price, img, stock, description}) => {
     const { addItem, isInCart } = useCart()
+    const [comment, setComment] = useState('Sin comentarios sobre el producto...')
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, quantity, img
+            id, name, price, quantity, img, comment
         }
         addItem(productToAdd)
     }
@@ -36,7 +38,12 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
                         </div>
                         ) : (
                             stock !== 0 
-                                ? <ItemCount onAdd={handleOnAdd} max={stock} price={price}/>
+                                ?
+                                <>
+                                    <label>Descripción del pedido:</label>
+                                    <textarea name='comment' onChange={(e) => setComment(e.target.value)}/>
+                                    <ItemCount onAdd={handleOnAdd} max={stock} price={price}/>
+                                </>
                                 : <h3>Sin stock</h3>
                         ) 
                 }

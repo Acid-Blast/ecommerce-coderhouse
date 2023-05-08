@@ -31,7 +31,7 @@ const OrderDetails = () => {
                 <h3><span className="whiteshadow">Telefono: </span>{newOrder.phone}</h3>
                 <h3><span className="whiteshadow">Dirección de entrega: </span>{newOrder.address}</h3>
                 {
-                    newOrder.comments !== "" && <h3><span className="whiteshadow">Comentarios: </span>{newOrder.comments}</h3>
+                    newOrder.comments !== "" && <h3><span className="whiteshadow">Referencias: </span>{newOrder.comments}</h3>
                 }
             </div>
 
@@ -42,10 +42,13 @@ const OrderDetails = () => {
                 </li>
             {
             orderCart.map(item => (
-                <li key={item.id} className="order__list__item">
-                    <p>{item.name} x{item.quantity}</p>
-                    <p>${item.price * item.quantity}</p>
-                </li>
+                <>
+                    <li key={item.id} className="order__list__item">
+                        <p>{item.name} x{item.quantity}</p>
+                        <p>${item.price * item.quantity}</p>
+                    </li>
+                    <li className="order__list__item"><p className="item-comment">{item.comment}</p></li>
+                </>
             ))
             }
                 <li className="order__list__total"><h3>Total: ${newOrder.total}</h3></li>
@@ -54,8 +57,9 @@ const OrderDetails = () => {
             <p>
                 El pedido ya está listo! Pronto recibiras un correo con los detalles de la orden y el envio.
             </p>
+            <h4>Gracias por elegirnos!</h4>
+            <img alt="logo" src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/logo.png?alt=media&token=8d281d3f-3244-4ab5-8c7d-8e905b4e9820"></img>
 
-                <img alt="logo" src="https://firebasestorage.googleapis.com/v0/b/backend-prod-sublimart.appspot.com/o/logo.png?alt=media&token=8d281d3f-3244-4ab5-8c7d-8e905b4e9820"></img>
         </div>
     )
 }

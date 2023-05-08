@@ -40,8 +40,6 @@ footer img{
 
 }
 
-
-
 footer section{
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +64,12 @@ footer a:hover{
     opacity: .9;
 }
 
+footer > a{
+    font-size: .9rem;
+}
+
 .redes{
+    position: relative;
     display: flex;
     align-items: flex-end;
 }
@@ -89,10 +92,24 @@ footer a:hover{
     }
 
     .redes, .contacto{
-        align-items: center;
+        align-items: flex-start;
         padding: 1rem;
     }
+
+    .contacto:first-of-type h4{
+        align-self: center;
+    }
+
     .redes h4{display: none}
+
+    .redes .redes__ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        gap: 2rem;
+    }
 
     footer section aside ul {
         list-style-type: none;

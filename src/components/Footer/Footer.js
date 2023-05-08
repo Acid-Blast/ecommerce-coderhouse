@@ -13,7 +13,7 @@ const Footer = (props) => {
 
                 <aside className='redes'>
                     <h4>Redes</h4>
-                    <ul>
+                    <ul className='redes__ul'>
                         <li>
                             <a href='https://www.instagram.com/sublim.art_/' target="_blank" rel="noreferrer">
                                 <img src='https://firebasestorage.googleapis.com/v0/b/sublim-art.appspot.com/o/ig.png?alt=media&token=909daaba-fccf-4f07-8ebb-a646ec090c58' alt='link a instagram'/>

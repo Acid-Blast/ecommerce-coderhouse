@@ -8,6 +8,7 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState( JSON.parse(localStorage.getItem('cart')) || [])
     localStorage.setItem('cart', JSON.stringify(cart))
 
+    
     const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
