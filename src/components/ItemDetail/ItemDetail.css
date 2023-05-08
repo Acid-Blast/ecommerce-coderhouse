@@ -136,18 +136,16 @@
         gap: 1rem;
     }
 
-    .info-container :not(textarea){
-        padding-left: 7px;
-    }
-
     .info-container textarea{
         width: 100vw;
         height: 40vmin;
     }
+    .info-container :not(textarea){
+        padding-left: 7px;
+    }
 
-    .info-container textarea{
-        width: 100%;
-        height: 40vmin;
+    .info-container i{
+        font-size: .8rem;
     }
     
 }

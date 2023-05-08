@@ -41,7 +41,8 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
                                 ?
                                 <>
                                     <label>Descripción del pedido:</label>
-                                    <textarea name='comment' onChange={(e) => setComment(e.target.value)}/>
+                                    <i>Si no se agrega descripción, se enviará el producto en blanco.</i>
+                                    <textarea name='comment' onChange={(e) => setComment(e.target.value)} maxLength={300}/>
                                     <ItemCount onAdd={handleOnAdd} max={stock} price={price}/>
                                 </>
                                 : <h3>Sin stock</h3>
