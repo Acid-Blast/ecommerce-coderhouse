@@ -49,10 +49,9 @@
 .order-container .order__list .order__list__item{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.2rem;
-    width: 50vmin;
-
+    width: 100%;
 }
 
 .order-container .order__list .order__list__header{
@@ -71,6 +70,17 @@
     font-size: 1.3rem;
 }
 
+.order-container .item-comment{
+    font-size: 1rem;
+    width: 60vmin;
+    text-align: left;
+    color: #ccc;
+}
+
+.order-container h4{
+    font-size: 1.2rem;
+}
+
 .order-container img{
     width: 6rem;
     filter: drop-shadow(0 0 7px #111a);
@@ -85,14 +95,17 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
+    
+
+    .order-container .order__list .order__list__item{
+        justify-content: space-between;
+        width: 90vmin;
+    }
+
 
     .order-container .order__data{
         align-items: flex-start;
         text-align: left;
-    }
-
-    .order-container .order__list .order__list__item{
-        width: 80vmin;
     }
 
     .order-container > p{
