@@ -30,7 +30,8 @@ const Footer = (props) => {
                 </aside>
             </section>
             <h6>&#169; Copyright {new Date().getFullYear()} | {props.version}</h6>
-            <a href="https://github.com/Acid-Blast/ecommerce-coderhouse" target="_blank" rel='noreferrer'>
+            <a  rel='noreferrer'>
+            {/* href="https://github.com/Acid-Blast/ecommerce-coderhouse" target="_blank" */}
                 by Marce Falasca
             </a>
         </footer>
